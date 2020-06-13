@@ -25,8 +25,9 @@ zooAnimals.forEach(i => {
 
   console.log(i.animal_name)
   console.log(i.scientific_name)
-  displayNames.push(i.animal_name)
-  displayNames.push(i.scientific_name)
+  displayNames.push("Name:", i.animal_name)
+  displayNames.push("Scientific:", i.scientific_name)
+  
 })
 
 
@@ -130,7 +131,7 @@ function greeting(a, b){
  //Step 3: Check your work by un-commenting the following calls to consume(): 
  console.log(consume(2, 2, add)); // 4
  console.log(consume(10, 16, multiply)); // 160
- console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
+ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you! 
 
 
 
@@ -140,4 +141,8 @@ function greeting(a, b){
 Stretch: If you haven't already, convert your array method callbacks into arrow functions.
 
 */
+const consume1 = (a,b,c) => {return c(a,b)};
+const add1 = (a,b) => {return a + b};
+const multiply1 = (a,b) => {return a * b};
+const greeting1 = (a,b) => {return `Hello ${a} ${b}, nice to meet you!`};
 
